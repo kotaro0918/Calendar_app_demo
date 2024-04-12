@@ -1,6 +1,6 @@
 # vscode-devcontainer-python-base
 
-vscode で dev container を使って python の開発をするためのテンプレート(素)
+vscode で dev container を使って python の開発をするためのテンプレート
 
 ### 事前準備
 
@@ -34,3 +34,23 @@ geojson==3.0.1
 ```
 
 - `><` アイコンをクリックして、`Rebuild Container` を選択する。vscode が再度開かれると、ライブラリが利用可能になっている。
+## Demoの動かし方
+このDemoはStreamlitが入っていることを前提に進みます
+
+1. token.jsonとcredentials.jsonをワーキングディレクトリに保存する
+2. 上の説明を読んでContainer内でこのプロジェクトを開く
+3. ターミナルに以下のコマンドを打つ
+```
+streamlit run main.py
+```
+4. ブラウザ上でアプリが実行される  
+
+### 空き時間を抽出する
+1. 誰と誰のマッチングを行うか選択する  
+今回は2人しかいません
+2. 必要項目を選択し、空き時間を抽出のボタンをクリック
+
+### 予定を作成する
+1. 必要項目を入力する(このとき必ず説明をよく読んでください)
+2. 予定を作成するボタンをクリック
+3. Aivalix.calendar.app.demo@gmail.comのカレンダーが更新されます
